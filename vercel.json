@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "use": "@vercel/static-build",
+            "src": "package.json"
+        }
+    ],
+    "routes": [
+        {
+            "src": "(.*).js",
+            "dest": "/$1.js"
+        },
+        {
+            "src": "(.*).json",
+            "dest": "/$1.json"
+        },
+        {
+            "src": "/.*",
+            "dest": "/index.html"
+        }
+    ],
+    "build": {
+        "env": {
+            "REACT_APP_NODE_ENV": "production",
+            "REACT_APP_SERVER_URI": "https://social-media-server-miltondw.vercel.app/"
+        }
+    }
+}
