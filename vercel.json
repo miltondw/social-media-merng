@@ -23,7 +23,7 @@
     "build": {
         "env": {
             "REACT_APP_NODE_ENV": "production",
-            "REACT_APP_SERVER_URI": "https://social-media-server-miltondw.vercel.app/"
+            "REACT_APP_SERVER_URI": "https://social-media-merng-server.vercel.app/"
         }
     }
 }
