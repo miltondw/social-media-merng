@@ -1,10 +1,7 @@
 import { ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 
-const uri =
-  process.env.REACT_APP_NODE_ENV === "production"
-    ? process.env.REACT_APP_SERVER_URI
-    : process.env.REACT_APP_SERVER_URI_LOCAL;
+const uri = "https://social-media-merng-server.vercel.app/";
 
 const httpLink = createHttpLink({
   uri,
